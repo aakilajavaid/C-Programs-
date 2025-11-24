@@ -1,4 +1,4 @@
-//using Ternery operator
+// using Ternery operator
 #include <stdio.h>
 int main ()
 {
