@@ -2,7 +2,7 @@
 #include<stdio.h>
 int main ()
 {
-  int i, x, n;
+  int i, z, n;
   printf("enter the number of values: \n");
   scanf("%d" , &n);
   for(i=2; i<=20; i++)
