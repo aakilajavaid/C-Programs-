@@ -2,23 +2,23 @@
 #include <stdio.h>
 
 int main() {
-    int num, original, reverse = 0, remainder;
+    int num, rev = 0, temp;
 
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    original = num;
+    temp = num;
 
-    while (num != 0) {
-        remainder = num % 10;
-        reverse = reverse * 10 + remainder;
-        num = num / 10;
+    while (temp > 0) {
+        rev = rev * 10 + (temp % 10);
+        temp = temp / 10;
     }
 
-    if (original == reverse)
-        printf("The number is a palindrome.\n");
+    if (num == rev)
+        printf("Palindrome number\n");
     else
-        printf("The number is not a palindrome.\n");
+        printf("Not a palindrome number\n");
 
     return 0;
 }
+
